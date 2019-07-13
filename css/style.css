@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins';
+  overflow: hidden;
+}
+
+header {
+  height: 100%;
+  /* background: #000; */
+  /* position: relative; */
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.judul,
+.cart {
+  flex: 1;
+}
+
+.cart li {
+  /* background: rgba(228, 89, 99, 0.8); */
+  background: rgba(247, 168, 173);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.cart li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.judul h1 a {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+}
+
+.navnya {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.navnya li {
+  list-style: none;
+  font-size: 14px;
+}
+
+.navnya li a {
+  text-decoration: none;
+  color: #7E4B5C;
+}
+
+.navnya li a.active {
+  color: #E55B64;
+  font-weight: 700;
+}
+
+.navnya li a:hover {
+  color: #E55B64;
+}
+
+.cart {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.kotakheader {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.foto {
+  flex: 1;
+}
+
+.teks {
+  flex: 2;
+}
+
+.tekskecil {
+  text-align: center;
+  /* align-content: flex-start; */
+}
+
+.teks h2 {
+  font-size: 44px;
+  background: linear-gradient(to right, rgb(228, 83, 93), rgb(245, 192, 195));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+
+.teks p {
+  font-size: 22px;
+  font-weight: 300;
+  padding-top: 17px;
+  /* letter-spacing: 0.5px; */
+}
+
+.teks p span {
+  font-weight: 500;
+  color: #E55B64;
+}
+
+.teks button {
+  border: none;
+  background: none;
+  /* padding-top: 60px; */
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.teks button.book {
+  /* padding: 20px 48px; */
+  width: 160px;
+  /* height: 50px; */
+  line-height: 50px;
+  border: rgb(226, 131, 137) 2px solid;
+  color: rgb(226, 131, 137);
+  font-size: 14px;
+  transition: .3s all;
+}
+
+.teks button.search {
+  /* padding: 20px 48px; */
+  width: 160px;
+  /* height: 50px; */
+  line-height: 50px;
+  background: rgb(226, 131, 137);
+  /* background: linear-gradient(to right, rgb(228, 72, 82), rgb(238, 144, 149)); */
+  color: #fff;
+  font-size: 14px;
+  margin-left: 33px;
+  transition: .3s all;
+}
+
+.teks button.search:hover {
+  transition: .3s all;
+  box-shadow: rgb(226, 131, 137) 3px 0px 20px 3px;
+}
+
+.teks button.book:hover {
+  transition: .3s all;
+  color: white;
+  background: rgb(226, 131, 137);
+  box-shadow: rgb(226, 131, 137) 3px 0px 20px 3px;
+}
+
+.foto img {
+  width: 80vh;
+
+}
+
+.bulat1,
+.bulat2,
+.bulat3,
+.bulat4,
+.bulat5 {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.bulat1 {
+  top: -200px;
+  right: -10px;
+  width: 68vh;
+  opacity: 1;
+}
+
+.bulat2 {
+  top: 200px;
+  right: 100px;
+  opacity: 0.8;
+}
+
+.bulat3 {
+  bottom: -100px;
+  right: -100px;
+  z-index: -2;
+}
+
+.bulat4 {
+  bottom: -300px;
+  left: 100px;
+}
+
+.bulat5 {
+  bottom: -250px;
+  left: -100px;
+}
+
+.penutup {
+  padding: 200px 0px;
+  width: 100%;
+  background: #7E4B5C;
+}
